@@ -3,8 +3,8 @@ import os
 
 
 # print("Function: File Handling_Docker")
-# print("Release: 1.0.0")
-# print("Date: 2020-10-09")
+# print("Release: 1.0.1")
+# print("Date: 2021-10-26")
 # print("Author: Brian Neely")
 # print()
 # print()
@@ -171,6 +171,7 @@ def delete_file(file_path):
     if os.path.exists(file_path):
         try:
             os.remove(file_path)
+            print("The file: '{file_path_str}' has been deleted!".format(file_path_str=file_path))
             return True
         except:
             print("File could not be deleted. This may be a permission issue or the file is currently open!")
